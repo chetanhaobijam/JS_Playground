@@ -1,0 +1,14 @@
+[
+  {
+  "fullName": "Chetan",
+  "lastName": "Haobijam",
+  "isProgrammer": false,
+  "pets": ["Hanubi", "Muthi", "Ngangba", "Dondonbi", "Ngouba"]
+  },
+  {
+    "fullName": "Cherry",
+    "lastName": "Nongthongbam",
+    "isProgrammer": true,
+    "pets": ["Chaobi", "Ngoubi", "Tombi"]
+  }
+]
