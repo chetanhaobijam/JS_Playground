@@ -28,6 +28,10 @@ main {
   align-items: flex-end;
   justify-self: end;
   justify-content: flex-end;
+  mask: linear-gradient(
+    #0000 calc(100vh + var(--offset)),
+    #000 calc(100vh + var(--offset) + var(--fade))
+  );
   -webkit-mask: linear-gradient(
     #0000 calc(100vh + var(--offset)),
     #000 calc(100vh + var(--offset) + var(--fade))
