@@ -12,12 +12,26 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: auto 0;
+  grid-template-columns: auto 0px;
 }
 
 main {
   font-size: 1.5rem;
   line-height: 1.5em;
+}
+
+.container-top {
+  --offset: 100px;
+  --fade: 120px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-self: end;
+  justify-content: flex-end;
+  -webkit-mask: linear-gradient(
+    #0000 calc(100vh + var(--offset)),
+    #000 calc(100vh + var(--offset) + var(--fade))
+  );
 }
 
 a.top {
@@ -30,13 +44,9 @@ a.top {
   border-radius: 10px;
   display: grid;
   place-content: center;
-  place-self: end;
   position: sticky;
   bottom: 20px;
-  --offset: 100px;
-  margin-top: calc(100vh + var(--offset));
   margin-right: 10px;
-  white-space: nowrap;
   opacity: 0.3;
   transition: opacity ease 0.7s;
 }
