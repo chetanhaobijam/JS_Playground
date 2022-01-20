@@ -9,27 +9,3 @@ html {
   font: 400 16px "Lato", sans-serif;
   scroll-behavior: smooth;
 }
-
-body {
-  display: grid;
-  grid-template-columns: auto 0;
-}
-
-a.top {
-  text-decoration: none;
-  font-size: 4rem;
-  background-color: #e96443;
-  color: #fff;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: grid;
-  place-content: center;
-  place-self: end;
-  position: sticky;
-  bottom: 20px;
-  --offset: 100px;
-  margin-top: calc(100vh + var(--offset));
-  margin-right: 10px;
-  white-space: nowrap;
-}
