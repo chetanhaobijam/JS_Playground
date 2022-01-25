@@ -10,11 +10,21 @@
 
 <body>
   <h1>Fetch API Crash Course Exercise</h1>
-  <button id="btn1">Get Text File</button>
-  <button id="btn2">Get Users</button>
+  <button id="get-text">Get Text File</button>
+  <button id="get-users">Get JSON Data</button>
+  <button id="get-posts">Get API Data</button>
+  <br>
+  <form id="add-post">
+    <div>
+      <input type="text" id="title" placeholder="Title">
+    </div>
+    <div>
+      <textarea id="body" placeholder="Body"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
   <br><br>
-  <div id="output1"></div>
-  <div id="users-output"></div>
+  <div id="output"></div>
 
   <script src="./fetch1.js"></script>
 </body>
