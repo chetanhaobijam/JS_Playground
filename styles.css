@@ -9,3 +9,7 @@ html {
   font: 400 16px "Lato", sans-serif;
   scroll-behavior: smooth;
 }
+
+h1 {
+  color: hotpink;
+}
