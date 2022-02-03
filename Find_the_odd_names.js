@@ -3,12 +3,9 @@ function findOddNames(list) {
   // thank you for checking out the Coding Meetup kata :)
   let newArr = [];
   list.forEach((listItem) => {
-    let firstName = listItem.firstName;
-    let charTotal = 0;
-    for (let i = 0; i < firstName.length; i++) {
-      let charCode = firstName.charCodeAt(i);
-      charTotal += charCode;
-    }
+    let charTotal = listItem.firstName.split("").reduce((acc, item) => {
+      return acc + item.charCodeAt(0);
+    }, 0);
     if (charTotal % 2 !== 0) {
       newArr.push(listItem);
     }
