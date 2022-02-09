@@ -6,16 +6,25 @@ let stocks = {
   toppings: ["chocolate", "peanuts"],
 };
 
-let is_shop_open = false;
+let is_shop_open = true;
+
+let toppings_choice = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(console.log(`Which topping would you love?`));
+    }, 3000);
+  })
+}
 
 async function kitchen() {
-  try {
-    await abc;
-  } catch (error) {
-    console.log(`abc does not exist`, error);
-  } finally {
-    console.log(`Run code anyways`);
-  }
+  console.log("First Kitchen Task");
+  console.log("Second Kitchen Task");
+  await toppings_choice();
+  console.log("Third Kitchen Task");
+  console.log("Fourth Kitchen Task");
 }
 
 kitchen();
+console.log("Doing the dishes");
+console.log("Cleaning the tables");
+console.log("Taking other dishes");
