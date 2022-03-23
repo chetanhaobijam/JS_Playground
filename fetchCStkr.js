@@ -35,3 +35,25 @@ async function getData() {
     }
   });
 }
+
+const postNueva = {
+  title : "New Post Title",
+  body: "Paragraphe poste muy grande",
+  userId: 1
+}
+
+const createNewPost = post => {
+  const options = {
+    method : 'POST',
+    body : JSON.stringify(post),
+    headers: new Headers({
+      'Content-Type': 'application/json'
+    })
+  }
+  return fetch("https://jsonplaceholder.typicode.com/posts", options)
+    .then(res => res.json())
+    .then(posts => console.log(posts))
+    .catch(err => console.error(err));
+}
+
+createNewPost(postNueva);
