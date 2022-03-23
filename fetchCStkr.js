@@ -1,8 +1,10 @@
 const postSection = document.querySelector("#posts");
 const postTemplate = document.querySelector("#post-template");
 
-getData();
+getData()
+  .catch(err => console.error(err));
 
+// throw "Fetching Data error";
 async function getData() {
   const postStream = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await postStream.json();
@@ -22,11 +24,14 @@ async function getData() {
           const postTitle = newPost.querySelector(".post-title");
           const postBody = newPost.querySelector(".post-body");
 
+          // throw "Image Fetching Error";
+
           postImg.src = URL.createObjectURL(blob);
           postTitle.innerText = title;
           postBody.innerText = body;
           postSection.appendChild(newPost);
-        });
+        })
+        .catch(err => console.error(err));
     }
   });
 }
