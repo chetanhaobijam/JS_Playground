@@ -1,0 +1,18 @@
+{
+  "kishan" : {
+    "scan" : 140,
+    "entry" : 50
+  },
+  "chetan" : {
+    "scan" : 350,
+    "entry" : 70
+  },
+  "poukin" : {
+    "scan" : 240,
+    "entry" : 60
+  },
+  "rohel" : {
+    "scan" : 100,
+    "entry" : 40
+  }
+}
