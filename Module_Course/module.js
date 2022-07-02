@@ -15,3 +15,11 @@ function printAge(user) {
 
 export default User;
 export { printName, printAge };
+
+const h1 = document.querySelector("h1");
+
+export function changeh1() {
+  h1.addEventListener("click", () => {
+    h1.style.background = "pink";
+  })
+}
