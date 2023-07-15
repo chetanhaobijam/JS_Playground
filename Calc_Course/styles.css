@@ -1,0 +1,26 @@
+:root {
+    --width: 90%;
+    --hue : 324;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.my-container {
+    background-color: hsl(var(--hue), 55%, 73%);
+    padding: 2rem;
+    font-size: calc(1.5rem + 3vw);
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(var(--width) - 100px);
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .my-container {
+        background-color: hsl(calc(var(--hue) - 180), 55%, 73%);
+    }
+}
