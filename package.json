@@ -1,0 +1,20 @@
+{
+  "name": "js_playground",
+  "version": "1.0.0",
+  "description": "My Personal JS Playground where I practice new JS topics and take on Codewars Kata Challenges.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Haobijam Chetan Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+}
